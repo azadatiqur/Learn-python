@@ -1,11 +1,26 @@
 bengaliMarks = int(input("Please enter your marks in Bengali: "))
+while bengaliMarks > 100:
+    print("Marks must be less than or equal to 100! Please enter valid marks.")
+    bengaliMarks = int(input("Please enter your marks in Bengali: "))
+
 englishMarks = int(input("Please enter your marks in English: "))
+while englishMarks > 100:
+    print("Marks must be less than or equal to 100! Please enter valid marks.")
+    englishMarks = int(input("Please enter your marks in English: "))
+
 mathMarks = int(input("Please enter your marks in Math: "))
+while mathMarks > 100:
+    print("Marks must be less than or equal to 100! Please enter valid marks.")
+    mathMarks = int(input("Please enter your marks in Math: "))
+
 scienceMarks = int(input("Please enter your marks in Science: "))
+while scienceMarks > 100:
+    print("Marks must be less than or equal to 100! Please enter valid marks.")
+    scienceMarks = int(input("Please enter your marks in Science: "))
 
 numberOfSubs = 4
 
-avg = (bengaliMarks+englishMarks+mathMarks+scienceMarks)//4
+avg = (bengaliMarks+englishMarks+mathMarks+scienceMarks)//numberOfSubs
 
 
 if 100 >= avg >= 91:
