@@ -28,9 +28,9 @@ def get_user_input():
 
 def play_game():
     print("\n\nGuess the Number!")
-    correct_answer = choose_random_number(low, high)
-    print(correct_answer)
     chances_left = 5
+    print("Chances left: " + str(chances_left))
+    correct_answer = choose_random_number(low, high)
     while chances_left:
         chances_left -= 1
         user_input = get_user_input()
