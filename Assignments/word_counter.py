@@ -5,21 +5,18 @@ path = 'Assignments/input.txt'
 with open(path, 'r') as file:
     word_list = file.read().splitlines()
 
-#create a list where the search_words items are in lowercase
-search_words_lower = []
-for word in search_words:
-    search_words_lower.append(word.lower())
+#creating a list of words from input file which are all in lowercase
+word_list_lower = []
+for word in word_list:
+    word_list_lower.append(word.lower())
 
 #create dictionary the store the count of individual word
 word_count_dic = {}
 
-#initially making the count 0
+#counting the occurance of certain word in the list
 for word in search_words:
-    word_count_dic[word] = 0
+    word_count_dic[word] = word_list_lower.count(word.lower())
 
-for word in word_list:
-    if word.lower() in search_words_lower:
-        word_count_dic[word] += 1
 
 for word in word_count_dic:
     print("{} -> {}".format(word, word_count_dic[word]))
