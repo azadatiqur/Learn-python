@@ -1,8 +1,8 @@
 Python
-Java
+JAVA
 C
 C++
 PHP
-Python
+PYTHON
 Java
 OOP
